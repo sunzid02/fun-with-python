@@ -1,4 +1,13 @@
+print('hi')
 
-zia = (10, 20, 30, 40)
+x = 2
+print(x)
 
-print(zia)
+x = x + 2
+print(x)
+
+# Using conditional statement
+if x < 5:
+    print('smaller')
+else:
+    print('bigger')
