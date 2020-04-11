@@ -39,3 +39,13 @@ try:
 
 except:
     print('Problem found')
+
+
+
+148/4 = 37 
+
+ 60/ 37= 1.62
+
+ = ects per credit* 148cr
+ = total ects
+
