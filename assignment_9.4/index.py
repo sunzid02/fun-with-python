@@ -10,7 +10,7 @@
 name = input("Enter file:")
 if len(name) < 1:
     name = "mbox-short.txt"
-handle = open(name)
+handle = open(name, encoding='UTF-8')
 
 dic = dict()
 list = []
@@ -21,10 +21,26 @@ for txt in handle:
         word = txt.split()
         list.append(word[1])
 
+# print(list)
+
 
 #count email sending
+# method 1
 for w in list:
     dic[w] = dic.get(w, 0) + 1
+
+
+# method 2
+# for name in list:
+#     # print(name)
+#     if name in dic:
+#         dic[name] = dic[name] + 1
+#     else:
+#         dic[name] = 1
+
+# print(dic)
+
+
 
 #find the biggest value
 biggestCount = None
