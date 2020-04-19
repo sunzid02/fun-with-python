@@ -33,3 +33,8 @@ print(endPos)
 
 desiredString = x[ startPos+1 : endPos ]
 print(desiredString)
+
+# Which of the following slicing operations will produce the list[12, 3]?
+t = [9, 41, 12, 3, 74, 15]
+
+print(t[2:4])
