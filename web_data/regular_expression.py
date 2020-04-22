@@ -3,7 +3,7 @@ import re
 x = 'my 2 favourite numbers are 19 aand 45 '
 
 #it will run like: [0-9] any char from 0 to 9, + repeat one or more charecters
-y = re.findall( '\S.+e\S' , x )
+y = re.findall( '.+' , x )
 # y = re.findall( '^m.+1' , x )
 print(y)
 
