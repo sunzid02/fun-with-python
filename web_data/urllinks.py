@@ -16,3 +16,7 @@ tags = soup('a')
 
 for tag in tags:
     print(tag.get('href', None))
+
+
+x = urllib.request.urlopen('http://data.pr4e.org/romeo.txt')
+print(x)

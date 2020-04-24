@@ -42,9 +42,10 @@ url = 'https://en.wikipedia.org/wiki/Main_Page'
 
 html = urllib.request.urlopen(url).read()
 soup = BeautifulSoup(html, 'html.parser')
+print(soup)
 
 #get all a tag data
 tags = soup('a')
-print(tags)
-for tag in tags:
-    print(tag.get('href', None ))
+# print(tags)
+# for tag in tags:
+#     print(tag.get('href', None ))
