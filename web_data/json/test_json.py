@@ -13,4 +13,19 @@ data = '''
 }'''
 
 info = json.loads(data)
-print('Name:', info['name'])
+
+list = info.items()
+
+print(list)
+print(json.dumps(info, indent=4))
+
+
+
+
+
+
+
+
+
+
+
