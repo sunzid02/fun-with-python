@@ -21,8 +21,8 @@ for line in fh:
     # print(pieces[1])
     email = pieces[1]
     cur.execute('SELECT count from Counts where email = ?', (email,) )
+
     row = cur.fetchone() #grab the first one
-    print(row)
     if row is None:
         cur.execute('''INSERT into Counts (email, count)
         values (?, 1)''', (email,))
@@ -30,7 +30,7 @@ for line in fh:
         cur.execute('update Counts set count = count + 1 where email = ?', (email,))
     conn.commit()
 
-# sqlstr = 'SELECT email, count FROM Counts ORDER BY count DESC LIMIT 10'
+sqlstr = 'SELECT email, count FROM Counts ORDER BY count DESC LIMIT 10'
 
-# for row in cur.execute(sqlstr):
-#     print(str(row[0]), row[1] )
+for row in cur.execute(sqlstr):
+    print(str(row[0]), row[1] )
