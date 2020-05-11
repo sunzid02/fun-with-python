@@ -23,8 +23,34 @@ import re
 # print(domain)
 
 
-x = '<p>Please click <a href="http://www.dr-chuck.com">here</a></p>'
-y = re.findall('href="(.+)"', x)
-print(y)
+# x = '<p>Please click <a href="http://www.dr-chuck.com">here</a></p>'
+# y = re.findall('href="(.+)"', x)
+# print(y)
+
+# print(repeating_letter_a("banana"))  # True
+# print(repeating_letter_a("pineapple"))  # False
+# print(repeating_letter_a("Animal Kingdom"))  # True
+# print(repeating_letter_a("A is for apple"))  # True
 
 
+str = 'banaana'
+# str = 'aaDaaa'
+
+# res = re.findall('[pa+]', str)
+res = re.findall(r'[aA].*[aA]', str)
+# # res = re.search(r'.*\s*[aA].*\s*[aA].*', str)
+# res = re.findall(r'.*\s*[aA].*\s*[aA].*', str)
+# res = re.findall(r'[aA].*?[aA]', str)
+
+print(res)
+
+
+# matches = re.findall(r'((.)\2+)', 'baanana')
+
+# print(matches)
+
+
+newStr = 'elphant'
+
+matches2 = re.findall('[^ph]', newStr)
+print(matches2)
